@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from './supabaseClient';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './App.css';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [data, setData] = useState(null);
@@ -116,6 +117,9 @@ function App() {
               </tbody>
             </table>
           </div>
+        </div>
+        <div className="chatbot-section">
+          <Chatbot />
         </div>
       </main>
     </div>
